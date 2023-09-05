@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+}
+
+
+.painel {
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 2px 150px #00e5ff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    background: linear-gradient(#00e5ff, rgb(0, 30, 255));
+    animation: pricar 3.6s infinite linear;
+}
+
+@keyframes pricar {
+    0% {
+        box-shadow: 5px 2px 200px #00e5ff;
+    }
+
+    100% {
+        box-shadow: 6px 4px 150px #00e5ff;
+    }
+
+}
+
+
+.rodape {
+    margin: auto;
+    padding: 15px;
+}
+
+h1 {
+    color: aquamarine;
+    text-shadow: 5px 2px 15px rgb(8, 250, 238);
+}
+
+h4 {
+    color: white;
+    text-shadow: 5px 2px 15px rgb(255, 255, 255);
+}
+
+input {
+    border-radius: 25px;
+    border: none;
+    background-color: aquamarine;
+    box-shadow: 5px 2px 15px aquamarine;
+}
+
+.logo {
+    box-shadow: 2px 10px 10px;
+    background: linear-gradient(rgb(3, 3, 3), rgb(8, 8, 8));
+    border-radius: 10px;
+}
+
+.boto1 {
+    color: #f5f5f5;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boto {
+    color: #f5f5f5;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boto2 {
+    text-decoration: none;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
+
+.boto3 {
+    text-decoration: none;
+    border-radius: 5px;
+    color: #f5f5f5;
+    box-shadow:2px 2px 2px #515252de;
+}
+
+.card{
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+    border: 1px solid gray;
+    background-color: #0a65f7;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    
+}
+.card:hover{
+    width: 94%;
+    height: 104%;
+    background-color: #00e5ffbe;
+}
