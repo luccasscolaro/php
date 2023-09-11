@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="twitter (1).png" type="image/x-icon">
     <link rel="stylesheet" href="batePapo.css">
     <title>Document</title>
 </head>
@@ -20,8 +21,9 @@
             <h2>postagem</h2>
 
             <?php
-            $usuario = "Lccas Scolaro";
-            setcookie("nome", $usuario, time() + 86400 * 30, "/");
+            // $usuario = "Lccas Scolaro";
+            // setcookie("nome", $usuario, time() + 86400 * 30, "/");
+            $usuario = $_COOKIE["nome"];
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $postagem = $_POST["postagem"];
@@ -31,7 +33,7 @@
                 session_start();
 
 
-                if(!isset($_SESSION["postages"])){
+                if(!isset($_SESSION["postagens"])){
                     $_SESSION["postagens"] = array();
                 }
                 array_push($_SESSION["postagens"],$postagem);
@@ -41,7 +43,7 @@
         </div>
         <div class="rodape">
             <a href="betePapo.html" class="boto">fazer nova postagem</a>
-            <a href="usario.html" class="boto1">Cadastrar Usuario</a>
+            <a href="cookie.html" class="boto1">Cadastrar Usuario</a>
             <a href="busca.html" class="boto2">Buscar</a>
             <a href="lista.php" class="boto3">lista</a>
         </div>

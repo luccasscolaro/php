@@ -12,18 +12,24 @@
 <body>
     <div class="painel">
         <div class="cabecalho">
-            <h1>Cadastro de Usuario</h1>
+            <h1>Definição de cookie</h1>
             <a href="betePapo.html" class="boto4">fazer nova postagem</a>
         </div>
 
         <div class="canteudo">
-            <form action="salvarcookie.php" method="post">
+            <?php
+            if($_SERVER["REQUEST_METHOD"] == "POST"){
+                $nome = $_POST["usuario"];
+                setcookie("nome", $nome, time() + 86400 * 30, "/");
+                
+                echo"cookie de nome de usuario definido com sucessco. <br>";
+                echo"Nome Usuário: $nome";
+                
 
-                <label>Digite o nome de Usuario: </label>
-                <input type="text" id="Usuario" class="Usuario" name="usuario">
-
-                <input type="submit" value="definir cookie" class="enviar">
-            </form>
+            }else{
+                echo"Erro:Requisição Inálida ";
+            }
+            ?>
         </div>
         <div class="rodape">
 

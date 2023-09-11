@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="twitter (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="batePapo.css">
+    <title>lista de posts</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        function buscar() {
+
+            var valor = $("#valor").val();
+
+            $.ajax({
+                url:" Fazerbusca.php",
+                method:"GET",
+                data:{busca: valor},
+                success: function(data){
+                    $("#resultado").html(data);
+                }
+            });
+
+        }
+        $(document).ready(function(){
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="painel">
+        <div class="cabecalho">
+            <h1>página de Buscar</h1>
+            <a href="betePapo.html" class="boto4">lista</a>
+        </div>
+        <div class="canteudo">
+
+            <input type="text" id="valor" placeholder=" Digite a busca">
+
+            <button onclick="buscar()" class="enviar">buscar</button>
+
+            <div id="resultado">
+
+            </div>
+
+        </div>
+        <div class="rodape">
+            <a href="cookie.html" class="boto1">Cadastrar Usuario</a>
+            <a href="busca.html" class="boto2">Buscar</a>
+        </div>
+    </div>
+</body>
+
+</html>
