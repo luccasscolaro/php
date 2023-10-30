@@ -1,0 +1,108 @@
+.painel {
+    width: 500px;
+    margin-top: 20px;
+    margin: auto;
+    box-shadow: 2px 2px 10px;
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: invert(70%);
+    -webkit-backdrop-filter: invert(70%);
+
+
+
+}
+
+.funo {
+    background-color: rgba(59, 59, 58, 0.998);
+}
+
+.bunto1 {
+    margin-left: 175px;
+}
+
+.bunto2 {
+    margin: 0px;
+
+}
+
+.cpf {
+    margin-left: 45px;
+    border-radius: 10px;
+
+}
+
+.senha {
+    margin-left: 38px;
+    border-radius: 10px;
+}
+
+.login {
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(0, 0, 255);
+}
+
+.perfil {
+    text-shadow: 2px 2px 10px rgba(0, 0, 255, 0.659);
+    font-size: 100px;
+    padding-left: 190px;
+
+}
+
+.menu {
+    background-color: #005194;
+    min-width: 250px;
+    color: azure;
+    height: 100vh;
+    list-style: none;
+}
+
+@media (max-width: 999px) {
+    .menu {
+        display: none;
+    }
+}
+
+.item {
+    display: block;
+    padding: 1px 20px;
+    text-decoration: none;
+    font-style: none;
+    color: azure;
+}
+
+.sair {
+    display: block;
+    padding: 1px 20px;
+    position: relative;
+    text-decoration: none;
+    font-style: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(240, 70, 70);
+}
+
+.sair:hover {
+    background-color: #ff270a;
+    transition: 1s;
+    color: #ffffff;
+}
+
+.item:hover {
+    background-blend-mode: multiply;
+    color: azure;
+    transition: 1s;
+}
+
+UL {
+    list-style: none;
+}
+.cartao{
+    box-shadow: 2px 2px 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.cartao:hover{
+    background-color: beige;
+    transition: 1s;
+}
