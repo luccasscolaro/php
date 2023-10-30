@@ -1,9 +1,9 @@
 <?php
     //Fazer conexão do backend com o banco de dados
-    $nomeServidor = "localhost";
-    $username = "root";
-    $senha = "";
-    $nomeBanco = "rede_banco";
+    $nomeServidor = "sql301.infinityfree.com";
+    $username = "if0_35249655";
+    $senha = "nkTLI1bbUoE";
+    $nomeBanco = "if0_35249655_rede_banco";
 
     //mysqli - driver responsável por conectar com o banco
     $conexao = new mysqli($nomeServidor, $username, $senha, $nomeBanco);
